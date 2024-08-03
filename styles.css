@@ -1,0 +1,202 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+        url('https://veja.abril.com.br/wp-content/uploads/2024/01/1-abre-OLIMPIADAS-FRANCA-3282.jpg?quality=90&strip=info&w=1280&h=720&crop=1');
+    background-size: 100% 400px, cover;
+    background-position: 0% 100%, center;
+}
+
+/* styles.css */
+.clean-theme {
+    font-family: Arial, sans-serif;
+    background-image: 
+        linear-gradient(to bottom, rgba(206, 203, 203, 0.4), rgba(206, 203, 203, 0.4)), 
+        url('https://veja.abril.com.br/wp-content/uploads/2024/01/1-abre-OLIMPIADAS-FRANCA-3282.jpg?quality=90&strip=info&w=1280&h=720&crop=1');
+    background-size: 100% 400px, cover;
+    background-position: 0% 100%, center;
+}
+
+.clean-theme main {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clean-theme .medal-table-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clean-theme #medal-table-top-10-table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clean-theme #medal-table-top-10-table th, .clean-theme #medal-table-top-10-table td {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.clean-theme #medal-table-top-10-table th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.logo {
+    width: 400px; 
+    height: 200px;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* torna o fundo um pouco transparente */
+    border: 1px solid #ddd;
+    border-radius: 30px; /* arredonda as bordas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* adiciona uma sombra mais pronunciada */
+}
+
+.medal-table-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-country-container {
+    margin-bottom: 20px;
+}
+
+.select-country {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.medal-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.medal-table th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.medal-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.fas.fa-medal {
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.fas.fa-medal.gold {
+    color: #ffd700;
+}
+
+.fas.fa-medal.silver {
+    color: #b1b1b1;
+}
+
+.fas.fa-medal.bronze {
+    color: #cd7f32;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-toggle button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.theme-toggle button:hover {
+    background-color: #D7C378;
+}
+
+#medal-table-top-10-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px; /* adiciona arredondamento às bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adiciona uma sombra leve */
+}
+
+#medal-table-top-10-table th, #medal-table-top-10-table td {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* torna o fundo da célula um pouco transparente */
+}
+
+#medal-table-top-10-table th {
+    background-color: rgba(51, 51, 51, 0.8); /* torna o fundo da célula de título um pouco transparente */
+    color: #fff;
+}
+
+#medal-table-top-10-table td img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 15%; /* arredonda a imagem */
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    #medal-table-top-10-table {
+        font-size: 14px;
+    }
+}
+
+.custom-select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .custom-select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ranking-select-container {
+    margin-bottom: 20px;
+  }
+  
+  .ranking-select-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }

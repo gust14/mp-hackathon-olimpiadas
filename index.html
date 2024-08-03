@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro de Medalhas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body class="dark-theme">
+    <header>
+        <img src="assets/logo-olimpiadas.png" alt="Logo das Olimpíadas" class="logo">
+        <div class="theme-toggle">
+            <button id="toggle-dark" class="fas fa-moon"></button>
+            <button id="toggle-clean" class="fas fa-sun"></button>
+        </div>
+    </header>
+    <main>
+        <div class="medal-table-container">
+            <h1 class="title">Medalhas Por País</h1>
+            <div class="select-country-container">
+              <label for="select-country">Selecione um país:</label>
+              <select id="select-country" class="select-country">
+                <option value="">Selecione um país</option>
+              </select>
+            </div>
+            <div id="medal-table" class="medal-table"></div>
+          </div>
+        <div id="medal-table-top-10" class="medal-table-top-10">
+            <h2 class="title">
+                <i class="fas fa-rocket"></i> Top 10 Países por Medalhas
+              </h2>
+              
+              <div class="ranking-select-container">
+                <label for="select-ranking">Ordenar por:</label>
+                <select id="select-ranking" class="select-ranking custom-select">
+                  <option value="rank">Ranking Oficial</option>
+                  <option value="rank_total_medals">Ranking por Total de Medalhas</option>
+                </select>
+              </div>
+            <table id="medal-table-top-10-table" class="medal-table">
+              <thead>
+                <tr>
+                  <th>País</th>
+                  <th>Bandeira</th>
+                  <th><i class="fas fa-medal gold"></i></th>
+                  <th><i class="fas fa-medal silver"></i></th>
+                  <th><i class="fas fa-medal bronze"></i></th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="medal-table-top-10-body">
+              </tbody>
+            </table>
+          </div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p style="text-align: center;">
+          &copy; <span id="current-year"></span>
+        </p>
+      </footer>
+      
+      <script>
+        const currentYear = document.getElementById('current-year');
+        currentYear.textContent = new Date().getFullYear();
+      </script>
+</body>
+</html>

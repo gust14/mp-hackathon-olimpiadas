@@ -38,7 +38,8 @@ O código da aplicação é dividido em três arquivos:
 
 ## Compatibilidade
 
-A aplicação é compatível com os principais navegadores modernos, incluindo Google Chrome, Mozilla Firefox e Microsoft Edge. Também com é compatível com diferentes tamanhos de telas.
+A aplicação é compatível com os principais navegadores modernos, incluindo Google Chrome, Mozilla Firefox e Microsoft Edge. Também é compatível com diferentes tamanhos de telas.
+- [Veja na pratica](https://mp-hackathon-olimpiadas-chi.vercel.app/)
 
 ## Licença
 
